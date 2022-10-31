@@ -4,5 +4,7 @@
 
 import 'package:process_run/shell.dart';
 
-Future<void> main(List<String> args) async =>
-    await Shell().run('dart run import_sorter:main');
+Future<void> main(List<String> args) async => await Shell().run('''
+cd ./app
+dart run import_sorter:main
+''');

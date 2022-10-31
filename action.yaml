@@ -1,0 +1,9 @@
+name: "Format Dart Imports"
+description: "🎯 The action that automatically sorts imports of the Dart language based on import_sorter."
+author: 'Kato Shinya'
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: edit
+  color: blue

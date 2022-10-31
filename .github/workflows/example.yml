@@ -19,4 +19,4 @@ jobs:
       - name: Install Dependencies
         run: dart pub get
       - name: Format Dart Imports
-        uses: dart-actions/format-dart-imports@v0.0.3
+        uses: dart-actions/format-dart-imports@v0.0.4

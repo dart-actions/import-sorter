@@ -2,8 +2,14 @@ name: "Format Dart Imports"
 description: "🎯 The action that automatically sorts imports of the Dart language based on import_sorter."
 author: 'Kato Shinya'
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v3
+    - uses: dart-lang/setup-dart@v1.3
+    - run: dart pub get
+      shell: bash
+    - run: dart run import_sorter
+      shell: bash
 branding:
   icon: edit
   color: blue

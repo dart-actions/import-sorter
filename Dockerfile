@@ -4,7 +4,6 @@ FROM dart:stable AS build
 # Resolve app dependencies.
 WORKDIR /app
 COPY pubspec.* ./
-RUN dart pub add import_sorter
 RUN dart pub get
 
 # Copy app source code and AOT compile it.

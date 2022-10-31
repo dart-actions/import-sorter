@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Format Dart Imports
-        uses: dart-actions/format-dart-imports@v0.0.2
+        uses: dart-actions/format-dart-imports@v0.0.3

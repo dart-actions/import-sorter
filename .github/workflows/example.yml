@@ -12,5 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Format Dart Imports
         uses: dart-actions/format-dart-imports@v0.0.3
